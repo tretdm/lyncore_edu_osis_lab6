@@ -1,14 +1,7 @@
 #!/bin/bash
-dir="/home/evan/test/tes/test"
-direct="test/"
-if ! [ -d $dir ]; then
+if ! [ -d $1 ]; then
 echo 'No directory'
-mkdir $dir
+mkdir $1
 fi
-if ! [ -d $direct ]; then
-echo 'No directory'
-mkdir $direct
-fi
-
 exit 0
 

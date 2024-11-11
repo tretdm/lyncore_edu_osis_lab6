@@ -1,11 +1,8 @@
-
 #!/bin/bash
-username="doc"
 h=""
-h=`grep $username /etc/passwd`
-echo $h
+h=`grep $1 /etc/passwd`
 if [ "$h" == "" ]; then
 echo "Нет пользователя"
 fi
-
+echo "$h" | cut -d ':' -f 6
 exit 0
