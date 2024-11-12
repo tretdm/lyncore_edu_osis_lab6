@@ -1,9 +1,12 @@
-#!/bin/bash
-if [[ "$1" && "$2" && "$3" ]]; then 
-  sum=$(($1 + $2 + $3))
-  count=3
-  result=$(echo "scale=2; 1.0 * $sum / $count" | bc -l)
-  echo "The mean of these" $count "values is" $result
-else
-  echo "Write three numbers after script"
-fi
+#!/bin/sh
+sum=0
+u=0
+for i in $*
+do
+u=`expr $u + 1`
+sum=`expr $sum + $i`
+done
+if [[ u > 0 ]]; then
+avg=`expr $sum / $u`
+echo Average = $avg, Sum = $sum, U = $u
+fi;
