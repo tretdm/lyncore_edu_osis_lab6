@@ -5,4 +5,5 @@ if [[ $1 ]]; then
 	mkdir -p ../../$1/src/styles
 	cp ../../README.md ../../$1
 	touch .gitignore
+	echo "Project is created."
 fi
