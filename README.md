@@ -6,13 +6,13 @@
 Структура проекта должна содержать следующие элементы:
 ```sh
 .
-├── project_name
-│   ├── src
-│   │   ├── images
-│   │   ├── scripts
-│   │   └── styles
-│   ├──README.md
-│   └──.gitignore
+└── project_name
+    ├── src
+    │   ├── images
+    │   ├── scripts
+    │   └── styles
+    ├──README.md
+    └──.gitignore
 ```
 Как не стоит делать:
 ```bash
